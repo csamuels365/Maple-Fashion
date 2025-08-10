@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maple Consulting — High-Ticket Sales & Brand Partnerships</title>
+  <meta name="description" content="Maple Consulting drives premium revenue through high-ticket sales, brand endorsements, fashion & retail marketing, and B2B services." />
+  <style>
+    :root{
+      --bg:#F5F2EC;
+      --ink:#2E1A12;
+      --rust:#8B4513;
+      --muted:#a88a7c;
+      --max:1120px;
+      --radius:14px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial, sans-serif;line-height:1.5}
+    a{color:var(--rust);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--max);margin:auto;padding:0 20px}
+    header{background:rgba(245,242,236,.95);border-bottom:1px solid #e9e3db;}
+    nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:44px}
+    .brand .name{font-weight:800;letter-spacing:.4px}
+    .cta{background:var(--rust);color:#fff;padding:12px 18px;border-radius:10px;box-shadow:var(--shadow)}
+    .cta.alt{background:transparent;border:1px solid var(--rust);color:var(--rust)}
+    section{padding:60px 0}
+    h1{color:var(--rust)}
+    .grid{display:grid;gap:20px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:900px){.grid.cols-2{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid #efe9e1;border-radius:var(--radius);padding:20px}
+    footer{padding:36px 0;border-top:1px solid #e9e3db;color:#6c574c;text-align:center}
+    img.responsive{width:100%;height:auto;border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,0.08)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <img src="logo.png" alt="Maple Consulting logo" />
+          <div class="name">Maple Consulting</div>
+        </div>
+        <div class="actions">
+          <a class="cta alt" href="#contact">Contact</a>
+          <a class="cta" href="mailto:Info@mapleconsultant.com">Book a Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section>
+      <div class="wrap grid cols-2">
+        <div>
+          <h1>Turning Premium Opportunities into Profitable Partnerships</h1>
+          <p>We specialize in high-ticket sales, brand endorsements, fashion & retail marketing, and B2B growth—delivering measurable revenue and long-term brand equity.</p>
+          <a class="cta" href="mailto:Info@mapleconsultant.com">Start a Project</a>
+        </div>
+        <div class="card">
+          <h3>Quick Intro</h3>
+          <p>Maple Consulting (CEO: Mackenzie Maple) helps founders and brands close premium deals and scale trusted partnerships.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" style="background:#fff;">
+      <div class="wrap grid cols-2">
+        <div>
+          <img src="about-photo.jpg" alt="Mackenzie Maple" class="responsive" />
+        </div>
+        <div>
+          <h2>About Me</h2>
+          <p>I’m Mackenzie Maple, founder and CEO of Maple Consulting, bringing over a decade of proven expertise in the fashion and retail sector. My career spans working with luxury houses, emerging designers, and leading retail brands—helping them launch collections, craft unforgettable brand stories, and build global audiences.</p>
+          <p>From styling celebrity campaigns to negotiating high-profile brand partnerships, I’ve experienced the industry from the runway to the boardroom. This gives me a unique edge in merging creative vision with commercial strategy—ensuring every project is both trend-setting and revenue-generating.</p>
+          <p>Whether advising on fashion retail marketing, orchestrating brand endorsements, or facilitating B2B collaborations, my goal remains the same: to help brands elevate their image, expand their reach, and secure partnerships that drive measurable growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="wrap grid cols-2">
+        <div class="card">
+          <h3>High-Ticket Sales</h3>
+          <p>Outbound & consultative sales engines for premium offers—scripts, funnels, and closers optimized for CAC/LTV.</p>
+        </div>
+        <div class="card">
+          <h3>Brand Endorsements</h3>
+          <p>Matchmaking brands with credible voices. Contract negotiation, campaign management, and performance tracking.</p>
+        </div>
+        <div class="card">
+          <h3>Fashion & Retail Marketing</h3>
+          <p>Go-to-market for collections and drops, retail activations, and influencer retail collabs that convert.</p>
+        </div>
+        <div class="card">
+          <h3>B2B Partnerships</h3>
+          <p>Pipeline development, partner programs, and account-based plays that unlock enterprise opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrap grid cols-2">
+        <div class="card">
+          <form action="https://formspree.io/f/your-id" method="POST">
+            <input name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="How can we help?" required></textarea>
+            <button class="cta" type="submit" style="border:0;cursor:pointer">Request Consultation</button>
+          </form>
+        </div>
+        <div>
+          <p><strong>Direct:</strong><br/>+1 (678) 858-4042<br/>Info@mapleconsultant.com</p>
+          <p><strong>Office:</strong><br/>123 Peachtree St. NE., Atlanta, GA</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Maple Consulting. All rights reserved.</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
