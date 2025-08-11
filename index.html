@@ -1,24 +1,177 @@
-doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maple Consulting — New York</title>
-<meta name="description" content="Maple Consulting in New York: high-ticket sales, brand endorsements, fashion & retail marketing, and B2B partnerships.">
+<title>Mackenzie Maple — Global</title>
+<meta name="description" content="Mackenzie Maple — Global consulting for high-ticket sales, brand endorsements, fashion & retail marketing, and B2B partnerships.">
 <style>
   :root{
-    --bg:#F5F2EC;        /* warm beige */
-    --ink:#2E1A12;       /* deep brown */
-    --muted:#6f5a50;     /* taupe text */
-    --rust:#8B4513;      /* accent */
-    --line:#e9e3db;      /* borders */
-    --max:1120px;
-    --radius:14px;
-    --shadow:0 10px 30px rgba(0,0,0,.06);
+    --bg:#f7faff;
+    --ink:#0b1a2b;           /* deep navy */
+    --mute:#51607a;          /* soft slate */
+    --acc:#1e5cff;           /* primary blue */
+    --line:#e6eefc;
+    --max:1040px;
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  a{color:var(--rust);text-decoration:none}
-  a:hover{opacity:.9}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+  a{color:var(--ink);text-decoration:none}
   .wrap{max-width:var(--max);margin:auto;padding:0 20px}
+
   /* Header */
+  header{position:sticky;top:0;background:rgba(247,250,255,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;gap:10px;align-items:center}
+  .brand img{height:36px}
+  .nav a{opacity:.7;margin-left:18px}
+  .nav a:hover{opacity:1}
+  .cta{display:inline-block;padding:10px 16px;border:1px solid var(--acc);color:#fff;background:var(--acc);border-radius:10px}
+
+  /* Hero */
+  .hero{padding:80px 0 40px}
+  .kick{letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-size:12px;margin-bottom:14px}
+  h1{font-size:clamp(40px,8vw,88px);line-height:0.95;margin:0}
+  .sub{margin:14px 0 24px;color:var(--mute);font-size:clamp(16px,2.2vw,20px)}
+  .row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+  .tag{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--mute);background:#fff}
+  .hero-img{margin-top:26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#dfe9ff}
+  .hero-img img{width:100%;height:420px;object-fit:cover;display:block}
+
+  /* Sections – super light copy */
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{margin:0 0 14px;font-size:clamp(22px,3vw,32px)}
+  p{color:var(--mute);margin:8px 0 0}
+
+  .grid3{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+  @media (max-width:900px){.grid3{grid-template-columns:1fr}}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+  .mini{font-size:14px;color:var(--mute);margin-top:6px}
+
+  .slim{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--acc);color:var(--acc)}
+  .btn.primary{background:var(--acc);color:#fff}
+
+  footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mute);text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <img src="logo.png" alt="Mackenzie Maple">
+        <strong>Mackenzie Maple</strong>
+      </div>
+      <div class="nav">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="cta">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="kick">Global</div>
+      <h1>Brand Partnerships &<br>Revenue Systems</h1>
+      <div class="sub">High-ticket sales. Endorsements. Fashion & retail marketing. B2B growth.</div>
+      <div class="row">
+        <span class="tag">Premium Offers</span>
+        <span class="tag">Creator Endorsements</span>
+        <span class="tag">Retail Launches</span>
+        <span class="tag">B2B Partnerships</span>
+      </div>
+
+      <div class="hero-img" aria-label="cover image">
+        <!-- Replace with your image -->
+        <img src="hero-blue.jpg" alt="Clean blue abstract">
+      </div>
+      <div class="slim" style="margin-top:18px">
+        <a class="btn primary" href="mailto:Info@mapleconsultant.com?subject=Project%20Inquiry">Book a consultation</a>
+        <a class="btn" href="#services">Explore services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECT WORK (very brief tiles) -->
+  <section id="work">
+    <div class="wrap">
+      <h2>Selected Work</h2>
+      <div class="grid3">
+        <div class="card">
+          <strong>Premium Sales Sprint</strong>
+          <div class="mini">+1.2M pipeline in 6 weeks for a luxury offer.</div>
+        </div>
+        <div class="card">
+          <strong>Creator Endorsement</strong>
+          <div class="mini">Negotiated multi-channel deal; 4.6× first-quarter ROAS.</div>
+        </div>
+        <div class="card">
+          <strong>Retail Capsule Launch</strong>
+          <div class="mini">NYC pop-up + influencer retail collab with measurable sell-through.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (short + scannable) -->
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="grid3">
+        <div class="card">
+          <strong>High-Ticket Sales</strong>
+          <div class="mini">Playbooks, closers, dashboards.</div>
+        </div>
+        <div class="card">
+          <strong>Brand Endorsements</strong>
+          <div class="mini">Shortlists, outreach, negotiation.</div>
+        </div>
+        <div class="card">
+          <strong>Fashion & Retail Marketing</strong>
+          <div class="mini">Drops, activations, retail partnerships.</div>
+        </div>
+      </div>
+      <div class="slim" style="margin-top:14px">
+        <a class="btn primary" href="mailto:Info@mapleconsultant.com?subject=Brief%20Call">Request a 15-min intro</a>
+        <a class="btn" href="#contact">Email details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (minimal) -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="card" style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:Info@mapleconsultant.com">Info@mapleconsultant.com</a>
+        </div>
+        <div>
+          <strong>Direct</strong><br>
+          <a href="tel:+16788584042">+1 (678) 858-4042</a>
+        </div>
+        <div>
+          <strong>Social</strong><br>
+          IG <a href="https://instagram.com/kenzie_maple" target="_blank" rel="noopener">@kenzie_maple</a> ·
+          TikTok <a href="https://tiktok.com/@kenzie_maple" target="_blank" rel="noopener">@kenzie_maple</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="y"></span> Mackenzie Maple · Global
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
