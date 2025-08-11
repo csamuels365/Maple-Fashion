@@ -1,133 +1,225 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maple Consulting — High-Ticket Sales & Brand Partnerships</title>
-  <meta name="description" content="Maple Consulting drives premium revenue through high-ticket sales, brand endorsements, fashion & retail marketing, and B2B services." />
-  <style>
-    :root{
-      --bg:#F5F2EC;
-      --ink:#2E1A12;
-      --rust:#8B4513;
-      --muted:#a88a7c;
-      --max:1120px;
-      --radius:14px;
-      --shadow:0 10px 30px rgba(0,0,0,.06);
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial, sans-serif;line-height:1.5}
-    a{color:var(--rust);text-decoration:none}
-    a:hover{opacity:.9}
-    .wrap{max-width:var(--max);margin:auto;padding:0 20px}
-    header{background:rgba(245,242,236,.95);border-bottom:1px solid #e9e3db;}
-    nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:44px}
-    .brand .name{font-weight:800;letter-spacing:.4px}
-    .cta{background:var(--rust);color:#fff;padding:12px 18px;border-radius:10px;box-shadow:var(--shadow)}
-    .cta.alt{background:transparent;border:1px solid var(--rust);color:var(--rust)}
-    section{padding:60px 0}
-    h1{color:var(--rust)}
-    .grid{display:grid;gap:20px}
-    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
-    @media(max-width:900px){.grid.cols-2{grid-template-columns:1fr}}
-    .card{background:#fff;border:1px solid #efe9e1;border-radius:var(--radius);padding:20px}
-    footer{padding:36px 0;border-top:1px solid #e9e3db;color:#6c574c;text-align:center}
-    img.responsive{width:100%;height:auto;border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,0.08)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maple Consulting — New York</title>
+<meta name="description" content="Maple Consulting in New York: high-ticket sales, brand endorsements, fashion & retail marketing, and B2B partnerships.">
+<style>
+  :root{
+    --bg:#F5F2EC;        /* warm beige */
+    --ink:#2E1A12;       /* deep brown */
+    --muted:#6f5a50;     /* taupe text */
+    --rust:#8B4513;      /* accent */
+    --line:#e9e3db;      /* borders */
+    --max:1120px;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(0,0,0,.06);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:var(--rust);text-decoration:none}
+  a:hover{opacity:.9}
+  .wrap{max-width:var(--max);margin:auto;padding:0 20px}
+  /* Header */
+  header{position:sticky;top:0;z-index:10;background:rgba(245,242,236,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:42px}
+  .brand b{letter-spacing:.3px}
+  .cta{display:inline-block;background:var(--rust);color:#fff;padding:10px 16px;border-radius:12px;box-shadow:var(--shadow)}
+  .cta.alt{background:transparent;border:1px solid var(--rust);color:var(--rust)}
+  /* Hero */
+  .hero{position:relative;min-height:46vh;display:grid;place-items:end;background:#000}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;filter:saturate(1.05)}
+  .hero .over{position:relative;width:100%;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.45) 50%,rgba(0,0,0,.65) 100%)}
+  .hero .wrap{padding:64px 20px 28px}
+  .hero h1{color:#fff;margin:0 0 8px;font-size:clamp(28px,5vw,48px);line-height:1.1}
+  .crumbs{color:#fff;opacity:.9;font-size:14px;margin-bottom:10px}
+  .crumbs a{color:#fff;text-decoration:underline}
+  .sub{color:#f3eee8;max-width:800px}
+  /* Main layout */
+  main{padding:40px 0}
+  .grid{display:grid;gap:28px;grid-template-columns:2fr 1fr}
+  @media (max-width:980px){.grid{grid-template-columns:1fr}}
+  .content h2{margin:18px 0;font-size:clamp(22px,2.6vw,30px)}
+  .content p{color:var(--muted)}
+  .section{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .bullets{display:grid;gap:10px;margin:14px 0}
+  .bullets li{list-style:none;padding-left:28px;position:relative;color:var(--ink)}
+  .bullets li:before{content:"•";position:absolute;left:6px;top:0;color:var(--rust);font-weight:900}
+  .cards{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  @media (max-width:980px){.cards{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}
+  .card h3{margin:0 0 8px}
+  .quote{background:#fff;border:1px solid var(--line);border-left:6px solid var(--rust);border-radius:12px;padding:18px;font-style:italic;color:var(--muted)}
+  /* Sidebar */
+  .side{position:sticky;top:96px;height:fit-content;display:flex;flex-direction:column;gap:18px}
+  .box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+  .box h3{margin:0 0 8px}
+  .kpis{display:flex;gap:12px;flex-wrap:wrap}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted)}
+  /* FAQ (accordion) */
+  .faq .item{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff}
+  .faq button{width:100%;text-align:left;background:transparent;border:0;padding:16px 16px;font-size:16px}
+  .faq .body{display:none;padding:0 16px 16px;color:var(--muted)}
+  .map{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center}
+</style>
 </head>
 <body>
-  <header>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <img src="logo.png" alt="Maple Consulting">
+        <b>Maple Consulting</b>
+      </div>
+      <div style="display:flex;gap:10px">
+        <a class="cta alt" href="/#services">Services</a>
+        <a class="cta" href="mailto:Info@mapleconsultant.com?subject=Consultation%20Request%20(NYC)">Book Consultation</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="New York hero">
+  <img src="hero-nyc.jpg" alt="New York skyline">
+  <div class="over">
     <div class="wrap">
-      <nav>
-        <div class="brand">
-          <img src="logo.png" alt="Maple Consulting logo" />
-          <div class="name">Maple Consulting</div>
-        </div>
-        <div class="actions">
-          <a class="cta alt" href="#contact">Contact</a>
-          <a class="cta" href="mailto:Info@mapleconsultant.com">Book a Consultation</a>
-        </div>
-      </nav>
+      <div class="crumbs"><a href="/">Home</a> › <a href="/locations">Locations</a> › New York</div>
+      <h1>New York Consulting</h1>
+      <p class="sub">High-ticket sales, brand endorsements, fashion & retail marketing, and B2B partnerships—tailored for NYC brands, founders, and creators.</p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <!-- Hero -->
-    <section>
-      <div class="wrap grid cols-2">
-        <div>
-          <h1>Turning Premium Opportunities into Profitable Partnerships</h1>
-          <p>We specialize in high-ticket sales, brand endorsements, fashion & retail marketing, and B2B growth—delivering measurable revenue and long-term brand equity.</p>
-          <a class="cta" href="mailto:Info@mapleconsultant.com">Start a Project</a>
-        </div>
-        <div class="card">
-          <h3>Quick Intro</h3>
-          <p>Maple Consulting (CEO: Mackenzie Maple) helps founders and brands close premium deals and scale trusted partnerships.</p>
-        </div>
+<main class="wrap">
+  <div class="grid">
+    <!-- MAIN CONTENT -->
+    <div class="content">
+      <div class="section">
+        <h2>Why Maple in New York?</h2>
+        <p>New York demands velocity, credibility, and measurable outcomes. Our team blends runway–level brand taste with boardroom-level revenue strategy to build partnerships that perform.</p>
+        <ul class="bullets">
+          <li>Proven playbooks for premium offer sales (consultative + outbound).</li>
+          <li>Endorsement strategy & negotiation with creators and public figures.</li>
+          <li>Fashion & retail marketing: launches, capsules, activations, retail collabs.</li>
+          <li>B2B growth: partner programs and account-based motions that open doors.</li>
+        </ul>
+        <a class="cta" href="mailto:Info@mapleconsultant.com?subject=NYC%20Project">Start a NYC Project</a>
       </div>
-    </section>
 
-    <!-- About Me -->
-    <section id="about" style="background:#fff;">
-      <div class="wrap grid cols-2">
-        <div>
-          <img src="about-photo.jpg" alt="Mackenzie Maple" class="responsive" />
-        </div>
-        <div>
-          <h2>About Me</h2>
-          <p>I’m Mackenzie Maple, founder and CEO of Maple Consulting, bringing over a decade of proven expertise in the fashion and retail sector. My career spans working with luxury houses, emerging designers, and leading retail brands—helping them launch collections, craft unforgettable brand stories, and build global audiences.</p>
-          <p>From styling celebrity campaigns to negotiating high-profile brand partnerships, I’ve experienced the industry from the runway to the boardroom. This gives me a unique edge in merging creative vision with commercial strategy—ensuring every project is both trend-setting and revenue-generating.</p>
-          <p>Whether advising on fashion retail marketing, orchestrating brand endorsements, or facilitating B2B collaborations, my goal remains the same: to help brands elevate their image, expand their reach, and secure partnerships that drive measurable growth.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="wrap grid cols-2">
+      <div class="cards">
         <div class="card">
           <h3>High-Ticket Sales</h3>
-          <p>Outbound & consultative sales engines for premium offers—scripts, funnels, and closers optimized for CAC/LTV.</p>
+          <p>Pipeline audits, scripts, closer enablement, and performance dashboards tuned for CAC/LTV.</p>
         </div>
         <div class="card">
           <h3>Brand Endorsements</h3>
-          <p>Matchmaking brands with credible voices. Contract negotiation, campaign management, and performance tracking.</p>
+          <p>Shortlist, outreach, negotiation, and campaign management with transparent KPIs.</p>
         </div>
         <div class="card">
           <h3>Fashion & Retail Marketing</h3>
-          <p>Go-to-market for collections and drops, retail activations, and influencer retail collabs that convert.</p>
-        </div>
-        <div class="card">
-          <h3>B2B Partnerships</h3>
-          <p>Pipeline development, partner programs, and account-based plays that unlock enterprise opportunities.</p>
+          <p>Go-to-market for drops & collections, influencer retail, and in-store experiences.</p>
         </div>
       </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="wrap grid cols-2">
-        <div class="card">
-          <form action="https://formspree.io/f/your-id" method="POST">
-            <input name="name" placeholder="Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea name="message" placeholder="How can we help?" required></textarea>
-            <button class="cta" type="submit" style="border:0;cursor:pointer">Request Consultation</button>
-          </form>
+      <div class="quote" aria-label="testimonial">
+        “Maple helped us close premium partnerships and launch a NYC retail activation that returned 4.6x within the first quarter.”
+        <div style="margin-top:6px;font-style:normal;color:var(--ink)">— Client Partner, Fashion/Retail</div>
+      </div>
+
+      <div class="section">
+        <h2>Where We Work</h2>
+        <p>SoHo • Flatiron • Garment District • Hudson Yards • Brooklyn (Williamsburg, DUMBO) — and remote across all five boroughs.</p>
+      </div>
+
+      <div class="section faq">
+        <h2>NYC FAQs</h2>
+        <div class="item">
+          <button aria-expanded="false">Do you take short-term launch projects?</button>
+          <div class="body">Yes. We offer sprint engagements (4–8 weeks) with clear deliverables and option to extend.</div>
         </div>
-        <div>
-          <p><strong>Direct:</strong><br/>+1 (678) 858-4042<br/>Info@mapleconsultant.com</p>
-          <p><strong>Office:</strong><br/>123 Peachtree St. NE., Atlanta, GA</p>
+        <div class="item">
+          <button aria-expanded="false">Can you source creators for endorsements?</button>
+          <div class="body">We maintain curated lists by category and audience fit, then run outreach and negotiation on your behalf.</div>
+        </div>
+        <div class="item">
+          <button aria-expanded="false">Do you work with in-house teams?</button>
+          <div class="body">Absolutely. We build playbooks and train your sales/marketing team to run the system after launch.</div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>© <span id="y"></span> Maple Consulting. All rights reserved.</p>
-    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-  </footer>
+      <div class="section map">
+        <!-- Replace the src with your actual map or studio location -->
+        <iframe
+          title="Maple Consulting NYC Map"
+          width="100%" height="360" style="border:0"
+          loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.983821!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNew%20York!5e0!3m2!1sen!2sus!4v0000000000">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="side">
+      <div class="box">
+        <h3>Book a Consultation</h3>
+        <p style="color:var(--muted);margin:0 0 10px">Mackenzie Maple, CEO</p>
+        <div class="kpis">
+          <span class="pill">NYC & Remote</span>
+          <span class="pill">White-glove</span>
+          <span class="pill">ROI-Driven</span>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta" href="mailto:Info@mapleconsultant.com?subject=NYC%20Consult">Email</a>
+          <a class="cta alt" href="tel:+16788584042">+1 (678) 858-4042</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Services in NYC</h3>
+        <ul class="bullets" style="margin:0">
+          <li>High-Ticket Sales</li>
+          <li>Brand Endorsements</li>
+          <li>Fashion & Retail Marketing</li>
+          <li>B2B Partnerships</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Office</h3>
+        <p style="color:var(--muted);margin:0">
+          123 Peachtree St. NE (NYC Remote Hub)<br>
+          <a href="https://instagram.com/kenzie_maple" target="_blank" rel="noopener">IG @kenzie_maple</a><br>
+          <a href="https://tiktok.com/@kenzie_maple" target="_blank" rel="noopener">TikTok @kenzie_maple</a>
+        </p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  © <span id="y"></span> Maple Consulting — New York
+</footer>
+
+<script>
+  // Year
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Simple accordion
+  document.querySelectorAll('.faq .item').forEach(item=>{
+    const btn = item.querySelector('button');
+    const body = item.querySelector('.body');
+    btn.addEventListener('click', ()=>{
+      const open = body.style.display === 'block';
+      document.querySelectorAll('.faq .body').forEach(b=>b.style.display='none');
+      document.querySelectorAll('.faq button').forEach(b=>b.setAttribute('aria-expanded','false'));
+      if(!open){ body.style.display='block'; btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+</script>
 </body>
 </html>
