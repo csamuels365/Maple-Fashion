@@ -1,177 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mackenzie Maple — Global</title>
-<meta name="description" content="Mackenzie Maple — Global consulting for high-ticket sales, brand endorsements, fashion & retail marketing, and B2B partnerships.">
-<style>
-  :root{
-    --bg:#f7faff;
-    --ink:#0b1a2b;           /* deep navy */
-    --mute:#51607a;          /* soft slate */
-    --acc:#1e5cff;           /* primary blue */
-    --line:#e6eefc;
-    --max:1040px;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
-  a{color:var(--ink);text-decoration:none}
-  .wrap{max-width:var(--max);margin:auto;padding:0 20px}
-
-  /* Header */
-  header{position:sticky;top:0;background:rgba(247,250,255,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{display:flex;gap:10px;align-items:center}
-  .brand img{height:36px}
-  .nav a{opacity:.7;margin-left:18px}
-  .nav a:hover{opacity:1}
-  .cta{display:inline-block;padding:10px 16px;border:1px solid var(--acc);color:#fff;background:var(--acc);border-radius:10px}
-
-  /* Hero */
-  .hero{padding:80px 0 40px}
-  .kick{letter-spacing:.18em;text-transform:uppercase;color:var(--mute);font-size:12px;margin-bottom:14px}
-  h1{font-size:clamp(40px,8vw,88px);line-height:0.95;margin:0}
-  .sub{margin:14px 0 24px;color:var(--mute);font-size:clamp(16px,2.2vw,20px)}
-  .row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
-  .tag{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--mute);background:#fff}
-  .hero-img{margin-top:26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#dfe9ff}
-  .hero-img img{width:100%;height:420px;object-fit:cover;display:block}
-
-  /* Sections – super light copy */
-  section{padding:56px 0;border-top:1px solid var(--line)}
-  h2{margin:0 0 14px;font-size:clamp(22px,3vw,32px)}
-  p{color:var(--mute);margin:8px 0 0}
-
-  .grid3{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
-  @media (max-width:900px){.grid3{grid-template-columns:1fr}}
-
-  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
-  .mini{font-size:14px;color:var(--mute);margin-top:6px}
-
-  .slim{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-  .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:1px solid var(--acc);color:var(--acc)}
-  .btn.primary{background:var(--acc);color:#fff}
-
-  footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mute);text-align:center}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mackenzie Maple — Image Consultant</title>
+  <meta name="description" content="Image Consultant helping executives, travelers, and special-event clients feel confident and impeccably styled.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-  <div class="wrap">
-    <nav>
-      <div class="brand">
-        <img src="logo.png" alt="Mackenzie Maple">
-        <strong>Mackenzie Maple</strong>
-      </div>
-      <div class="nav">
-        <a href="#work">Work</a>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Mackenzie Maple</div>
+      <div class="nav-links">
         <a href="#services">Services</a>
-        <a href="#contact" class="cta">Contact</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn btn-outline">Book</a>
       </div>
     </nav>
-  </div>
-</header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="kick">Global</div>
-      <h1>Brand Partnerships &<br>Revenue Systems</h1>
-      <div class="sub">High-ticket sales. Endorsements. Fashion & retail marketing. B2B growth.</div>
-      <div class="row">
-        <span class="tag">Premium Offers</span>
-        <span class="tag">Creator Endorsements</span>
-        <span class="tag">Retail Launches</span>
-        <span class="tag">B2B Partnerships</span>
+    <div class="hero-content">
+      <h1>IMAGE CONSULTANT</h1>
+      <p class="sub">I help you find your personal style &amp; what fits you best according to your body type.</p>
+      <p class="tags">Executive Image &nbsp;•&nbsp; Travel &nbsp;•&nbsp; Special Events &nbsp;•&nbsp; Daily Looks</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+        <a href="#services" class="btn">Explore Services</a>
       </div>
+    </div>
+    <img src="assets/hero.jpg" alt="Image consultant in city skybridge" class="hero-bg">
+    <div class="scrim"></div>
+  </header>
 
-      <div class="hero-img" aria-label="cover image">
-        <!-- Replace with your image -->
-        <img src="hero-blue.jpg" alt="Clean blue abstract">
+  <section id="services" class="section">
+    <h2>Signature Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Executive Image</h3>
+        <p>Boardroom-ready looks that communicate authority and polish without sacrificing comfort.</p>
       </div>
-      <div class="slim" style="margin-top:18px">
-        <a class="btn primary" href="mailto:Info@mapleconsultant.com?subject=Project%20Inquiry">Book a consultation</a>
-        <a class="btn" href="#services">Explore services</a>
+      <div class="card">
+        <h3>Travel Styling</h3>
+        <p>Capsule wardrobes and packing plans for effortless style from gate to gala.</p>
+      </div>
+      <div class="card">
+        <h3>Special Events</h3>
+        <p>Red-carpet moments, weddings, galas—curated head-to-toe styling for unforgettable entrances.</p>
+      </div>
+      <div class="card">
+        <h3>Daily Looks</h3>
+        <p>Smart, versatile outfits tailored to your lifestyle, body type, and color story.</p>
       </div>
     </div>
   </section>
 
-  <!-- SELECT WORK (very brief tiles) -->
-  <section id="work">
-    <div class="wrap">
-      <h2>Selected Work</h2>
-      <div class="grid3">
-        <div class="card">
-          <strong>Premium Sales Sprint</strong>
-          <div class="mini">+1.2M pipeline in 6 weeks for a luxury offer.</div>
-        </div>
-        <div class="card">
-          <strong>Creator Endorsement</strong>
-          <div class="mini">Negotiated multi-channel deal; 4.6× first-quarter ROAS.</div>
-        </div>
-        <div class="card">
-          <strong>Retail Capsule Launch</strong>
-          <div class="mini">NYC pop-up + influencer retail collab with measurable sell-through.</div>
-        </div>
-      </div>
+  <section id="about" class="section split">
+    <div class="copy">
+      <h2>Meet Mackenzie</h2>
+      <p>With 10+ years in the fashion industry, Mackenzie Maple has collaborated with top designers worldwide and styled clients across runway, editorial, and personal wardrobes. Her passion is simple: help you feel authentically confident—every single day.</p>
+      <ul class="bullets">
+        <li>Body-type analysis &amp; color palette building</li>
+        <li>Wardrobe edits, shopping lists, and personal shopping</li>
+        <li>Lookbooks with shoppable links</li>
+        <li>Virtual &amp; in-person sessions available</li>
+      </ul>
+    </div>
+    <div class="image-wrap">
+      <img src="assets/hero.jpg" alt="Mackenzie Maple styling portrait">
     </div>
   </section>
 
-  <!-- SERVICES (short + scannable) -->
-  <section id="services">
-    <div class="wrap">
-      <h2>Services</h2>
-      <div class="grid3">
-        <div class="card">
-          <strong>High-Ticket Sales</strong>
-          <div class="mini">Playbooks, closers, dashboards.</div>
-        </div>
-        <div class="card">
-          <strong>Brand Endorsements</strong>
-          <div class="mini">Shortlists, outreach, negotiation.</div>
-        </div>
-        <div class="card">
-          <strong>Fashion & Retail Marketing</strong>
-          <div class="mini">Drops, activations, retail partnerships.</div>
-        </div>
-      </div>
-      <div class="slim" style="margin-top:14px">
-        <a class="btn primary" href="mailto:Info@mapleconsultant.com?subject=Brief%20Call">Request a 15-min intro</a>
-        <a class="btn" href="#contact">Email details</a>
-      </div>
-    </div>
+  <section id="process" class="section">
+    <h2>The Process</h2>
+    <ol class="steps">
+      <li><span>01</span>Discovery Call — goals, timeline, and budget</li>
+      <li><span>02</span>Style Profile — body type, palette, lifestyle, and moodboard</li>
+      <li><span>03</span>Wardrobe Edit — keep, tailor, donate, or replace</li>
+      <li><span>04</span>Curated Looks — try-ons, tailoring notes, and a digital lookbook</li>
+      <li><span>05</span>Ongoing Support — seasonal refreshes and event styling</li>
+    </ol>
   </section>
 
-  <!-- CONTACT (minimal) -->
-  <section id="contact">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <div class="card" style="display:flex;flex-wrap:wrap;gap:18px;align-items:center">
-        <div>
-          <strong>Email</strong><br>
-          <a href="mailto:Info@mapleconsultant.com">Info@mapleconsultant.com</a>
-        </div>
-        <div>
-          <strong>Direct</strong><br>
-          <a href="tel:+16788584042">+1 (678) 858-4042</a>
-        </div>
-        <div>
-          <strong>Social</strong><br>
-          IG <a href="https://instagram.com/kenzie_maple" target="_blank" rel="noopener">@kenzie_maple</a> ·
-          TikTok <a href="https://tiktok.com/@kenzie_maple" target="_blank" rel="noopener">@kenzie_maple</a>
-        </div>
+  <section id="contact" class="section contact">
+    <h2>Book Your Consultation</h2>
+    <p>Ready to elevate your image? Send a note and you’ll hear back within 24 hours.</p>
+    <form action="mailto:hello@stylebyMM.com" method="post" enctype="text/plain" class="form">
+      <div class="grid">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
       </div>
-    </div>
+      <input type="text" name="subject" placeholder="What do you need help with? (Executive, Travel, Event, Daily Looks)" required>
+      <textarea name="message" placeholder="Tell me about your goals, timeline, and location." rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary">Request Booking</button>
+    </form>
+    <p class="small">Prefer DMs? Instagram: <a href="#" target="_blank">@mackenziemaple</a></p>
   </section>
-</main>
 
-<footer>
-  © <span id="y"></span> Mackenzie Maple · Global
-</footer>
+  <footer class="footer">
+    <p>© <span id="y"></span> Mackenzie Maple • Image Consultant</p>
+  </footer>
 
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
